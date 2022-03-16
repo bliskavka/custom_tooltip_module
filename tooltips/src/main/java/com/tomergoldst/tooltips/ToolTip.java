@@ -216,15 +216,6 @@ public class ToolTip {
         private @Nullable Typeface mTypeface;
         private int mMaxWidth;
 
-        /**
-         * Creates the tooltip builder with message and required parameters to show tooltip.
-         *
-         * @param context context
-         * @param anchorView the view which near it we want to put the tip
-         * @param root a class extends ViewGroup which the created tip view will be added to
-         * @param message message to show. Note: This allows normal text and spannable text with spanned styles.
-         * @param position  put the tip above / below / left to / right to anchor view.
-         */
         public Builder(@NonNull Context context,
                        @NonNull View anchorView,
                        @NonNull ViewGroup root,

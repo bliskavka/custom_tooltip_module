@@ -176,6 +176,7 @@ public class MainActivity extends Activity implements
                 mToolTipsManager.findAndDismiss(mTextView);
                 builder = new ToolTip.Builder(this, mTextView, mRootLayout, TIP_TEXT.equals(text) ? TIP_TEXT_SMALL : text, ToolTip.POSITION_LEFT_TO);
                 builder.setBackgroundColor(getResources().getColor(R.color.colorLightGreen));
+                builder.setAlign(mAlign);
                 builder.setGravity(ToolTip.GRAVITY_CENTER);
                 builder.setTypeface(mCustomFont);
                 builder.setTextAppearance(R.style.TooltipTextAppearance_Small_Black);
@@ -185,6 +186,7 @@ public class MainActivity extends Activity implements
                 mToolTipsManager.findAndDismiss(mTextView);
                 builder = new ToolTip.Builder(this, mTextView, mRootLayout, TIP_TEXT.equals(text) ? TIP_TEXT_LARGE : text, ToolTip.POSITION_RIGHT_TO);
                 builder.setBackgroundColor(getResources().getColor(R.color.colorDarkRed));
+                builder.setAlign(mAlign);
                 builder.setTextAppearance(R.style.TooltipTextAppearance_Large);
                 builder.setTypeface(mCustomFont);
                 mToolTipsManager.show(builder.build());
